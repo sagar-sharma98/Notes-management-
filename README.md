@@ -1,50 +1,52 @@
-# Welcome to your Expo app 👋
+# Offline Multi-User Notes App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native app that allows multiple users to create, edit, delete, and manage notes offline. Each user can only see their own notes. Notes can include images, and all data is stored locally using AsyncStorage. The app also supports search, sorting, and user authentication.
 
-## Get started
+---
 
-1. Install dependencies
+## **Features**
 
-   ```bash
-   npm install
-   ```
+### Authentication (Offline Only)
 
-2. Start the app
+- Sign Up and Login screens
+- Local user storage with unique username and password/PIN
+- Multiple users on the same device
+- Logout and switch accounts
 
-   ```bash
-   npx expo start
-   ```
+### Notes Management
 
-In the output, you'll find options to open the app in a
+- Create, edit, delete notes
+- Notes include:
+  - Title
+  - Body text
+  - Optional image (camera or gallery)
+- Notes stored per user in AsyncStorage
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Image Support
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Add images from gallery
+- Capture images from camera
+- Images persist after app restart
 
-## Get a fresh project
+### Search and Sort
 
-When you're ready, run:
+- Search notes by title or body text
+- Sort by:
+  - Last Updated (newest → oldest / oldest → newest)
+  - Title (A → Z / Z → A)
+- Search and sort work together
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## **Technologies & Libraries Used**
 
-## Learn more
+- **React Native** (Expo)
+- **AsyncStorage** for local storage
+- **React Navigation** for screen navigation
+- **Expo Image Picker** for camera & gallery access
+- **React Native Gesture Handler** (for swipe actions, optional)
+- **JavaScript / TypeScript** fundamentals
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
