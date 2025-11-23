@@ -1,4 +1,4 @@
-# Offline Multi-User Notes App
+# Notes Management App
 
 A React Native app that allows multiple users to create, edit, delete, and manage notes offline. Each user can only see their own notes. Notes can include images, and all data is stored locally using AsyncStorage. The app also supports search, sorting, and user authentication.
 
@@ -6,7 +6,7 @@ A React Native app that allows multiple users to create, edit, delete, and manag
 
 ## **Features**
 
-### Authentication (Offline Only)
+### Authentication 
 
 - Sign Up and Login screens
 - Local user storage with unique username and password/PIN
