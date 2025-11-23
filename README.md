@@ -18,8 +18,8 @@ A React Native app that allows multiple users to create, edit, delete, and manag
 - Create, edit, delete notes
 - Notes include:
   - Title
-  - Body text
-  - Optional image (camera or gallery)
+  - Description
+  -  image (camera)
 - Notes stored per user in AsyncStorage
 
 ### Image Support
@@ -41,10 +41,9 @@ A React Native app that allows multiple users to create, edit, delete, and manag
 ## **Technologies & Libraries Used**
 
 - **React Native** (Expo)
+- **Expo Route** (Expo)
 - **AsyncStorage** for local storage
-- **React Navigation** for screen navigation
 - **Expo Image Picker** for camera & gallery access
-- **React Native Gesture Handler** (for swipe actions, optional)
 - **JavaScript / TypeScript** fundamentals
 
 ---
